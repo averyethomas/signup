@@ -113,6 +113,10 @@ footer {
         display: block;
         margin: 0 auto 0.25rem;
         
+        &:hover {
+          color: $pink;
+        }
+        
         &.email {
           margin: 25px auto 0;
         }
@@ -273,7 +277,7 @@ body {
   
   .primary-content {
     background-color: #eaeaea;
-    padding: 50px 0 0;
+    padding: 50px 0;
     
     .container {
       text-align: center;

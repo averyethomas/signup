@@ -234,6 +234,8 @@ footer {
     footer .flex-container .section a {
       display: block;
       margin: 0 auto 0.25rem; }
+      footer .flex-container .section a:hover {
+        color: #df0e6b; }
       footer .flex-container .section a.email {
         margin: 25px auto 0; }
       footer .flex-container .section a .fab {
@@ -348,7 +350,7 @@ body {
             opacity: 0.75; }
   body .primary-content {
     background-color: #eaeaea;
-    padding: 50px 0 0; }
+    padding: 50px 0; }
     body .primary-content .container {
       text-align: center; }
       body .primary-content .container .section {
