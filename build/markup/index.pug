@@ -1,0 +1,75 @@
+doctype html
+html
+	include includes/header.pug
+
+	div.hero(ng-controller="mainCtrl")
+		div.container
+			div.logo
+				img(src="/images/logo.png")
+				img.hide-md(src="/images/mattr.png")
+			h1 Personalities<br>tell powerful stories.
+			p The key to successful brand engagement lies with the vibrant personalities that make up online audiences. Mattr translates the social data they generate into powerful stories and actionable insights, allowing brands to connect on a deeper level with their targets.
+			h4 Get to know your audience.<br>Request a private beta invitation:
+			form
+				<input type="email" placeholder="your@email.com">
+				<button class="cta" name="submit" type="submit">Request Invite</button>
+
+	div.primary-content
+		div.container
+			div.section
+				h2 The App
+				h5 Mattr allows you to build a more complete view of your social media audience through a comprehensive set of segmentation, comparison, monitoring, and visualization tools. Explore our Features to learn more.
+			div.section
+				div.image-container
+					div.image(data-ng-click="modal = true")
+						img(src="/images/audience.jpg")
+					h4 View Screenshot
+					div.plus
+						<span>&#43;</span>
+				h3 Audience Personality Segments
+				p Decide how you want to look at your audience on our Unique Personality Type Analysis and demographics.
+			div.section
+				div.image-container
+					div.image(data-ng-click="modal = true")
+						img(src="/images/audience.jpg")
+					h4 View Screenshot
+					div.plus
+						<span>&#43;</span>
+				h3 Persona Builder
+				p Combine Personality Traits and Dempographic information to create Audience Personas that make sense for your business.
+			div.section
+				div.image-container
+					div.image(data-ng-click="modal = true")
+						img(src="/images/audience.jpg")
+					h4 View Screenshot
+					div.plus
+						<span>&#43;</span>
+				h3 Engagement Response By Persona
+				p Which of your social media activities are attracting the audience engagement you're looking for? See a segmented repor on a per-post basis.
+			div.section
+				div.image-container
+					div.image(data-ng-click="modal = true")
+						img(src="/images/audience.jpg")
+					h4 View Screenshot
+					div.plus
+						<span>&#43;</span>
+				h3 Social Brand Benchmarking
+				p See how your brand's audience compares to that of your competition, or your industry. Choose what you want to compare and then view the comparison.
+			div.section
+				div.image-container
+					div.image(data-ng-click="modal = true")
+						img(src="/images/audience.jpg")
+					h4 View Screenshot
+					div.plus
+						<span>&#43;</span>
+				h3 Sentiment Variance
+				p Knowing that your audience is 'upbeat' just isn't enough. You need to know if they're more upbeat about your brand than they are about other things.
+	div.modal(data-ng-show="modal")
+		div.container
+			div.image
+				div.image-inner
+					img(src="/images/audience.jpg")
+					div.close(data-ng-click="modal = false")
+						p close <span>&#215;</span>
+
+	include includes/footer.pug
