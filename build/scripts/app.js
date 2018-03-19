@@ -1,8 +1,6 @@
 var app = angular.module('angularApp', []);
 
-app.controller('mainCtrl', ['$scope', function($scope){
-    $scope.hello = 'Hi!';
-}]);
+app.controller('mainCtrl', ['$scope', function($scope){}]);
 
 $(document).ready(function(){
     var visibility = $('.hero').visible(true, false, 'both');
@@ -23,4 +21,8 @@ $( window ).scroll(function() {
   } else {
     $('nav').addClass('fixed');
   }
+});
+
+$(document).ready(function() {
+   $(form)[0].reset();  
 });
