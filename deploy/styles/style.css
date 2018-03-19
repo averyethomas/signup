@@ -257,7 +257,7 @@ body {
     width: 100vw;
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
-    z-index: 100; }
+    z-index: 10000; }
     body .modal .container {
       max-width: 992px;
       position: relative;
@@ -286,6 +286,13 @@ body {
             max-width: 100%;
             max-height: 80vh;
             margin: 0 auto; }
+          body .modal .container .image .image-inner .caption {
+            position: absolute;
+            bottom: -22px;
+            left: 5px; }
+            body .modal .container .image .image-inner .caption p span {
+              font-weight: 700;
+              color: #df0e6b; }
           body .modal .container .image .image-inner .close {
             position: absolute;
             text-transform: uppercase;
@@ -301,7 +308,6 @@ body {
               position: relative;
               bottom: -5px; }
   body .hero {
-    border-bottom: 3px solid #df0e6b;
     background: url("../images/hero-bg.png") 50% 50% no-repeat;
     background-size: cover;
     text-align: center;
@@ -317,7 +323,10 @@ body {
             display: none; } }
       body .hero .container p {
         color: white;
-        margin: 0 auto 3rem; }
+        margin: 0 auto 50px; }
+      body .hero .container .alert {
+        display: block;
+        margin: 10px auto 0; }
       body .hero .container form {
         background: white;
         padding: 6px;
@@ -325,6 +334,8 @@ body {
         margin: 0 auto;
         overflow: hidden;
         text-align: center; }
+        body .hero .container form.error button, body .hero .container form.submitted button {
+          background: linear-gradient(125deg, #42014e, #df0e6b); }
         body .hero .container form input {
           border: none;
           padding: 10px 5px;
@@ -362,21 +373,23 @@ body {
           body .primary-content .container .section {
             width: calc(50% - 9px);
             display: inline-block;
-            vertical-align: bottom; }
+            vertical-align: top; }
+            body .primary-content .container .section:first-of-type {
+              vertical-align: bottom; }
             body .primary-content .container .section:nth-of-type(2n + 1) {
-              margin: 0 15px 50px 0; }
+              margin: 0 20px 50px 0; }
             body .primary-content .container .section:nth-of-type(2n + 2) {
               margin: 0 0 50px 0; } }
         @media all and (min-width: 1200px) {
           body .primary-content .container .section {
-            width: calc(33% - 9px);
+            width: calc(33% - 26px);
             display: inline-block; }
             body .primary-content .container .section:nth-of-type(2n + 1) {
               margin: 0 0 50px; }
             body .primary-content .container .section:nth-of-type(2n + 2) {
               margin: 0 0 50px; }
             body .primary-content .container .section:nth-of-type(3n + 2) {
-              margin: 0 15px 50px; } }
+              margin: 0 40px 50px; } }
         body .primary-content .container .section .image-container {
           position: relative; }
           body .primary-content .container .section .image-container:hover {

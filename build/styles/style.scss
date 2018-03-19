@@ -146,7 +146,7 @@ body {
     width: 100vw;
     background: rgba(0,0,0,0.5);
     position: fixed;
-    z-index: 100;
+    z-index: 10000;
     
     .container {
       max-width: 992px;
@@ -181,6 +181,19 @@ body {
             
           }
           
+          .caption {
+            position: absolute;
+            bottom: -22px;
+            left: 5px;
+            
+            p {
+              span {
+                font-weight: 700;
+                color: $pink;
+              }
+            }
+          }
+          
           .close {
             position: absolute;
             text-transform: uppercase;
@@ -207,7 +220,6 @@ body {
     }
   }
   .hero {
-    border-bottom: 3px solid $pink;
     background: url('../images/hero-bg.png') 50% 50% no-repeat;
     background-size: cover;
     text-align: center;
@@ -232,7 +244,12 @@ body {
       
       p {
         color: white;
-        margin: 0 auto 3rem;
+        margin: 0 auto 50px;
+      }
+      
+      .alert {
+        display: block;
+        margin: 10px auto 0;
       }
       
       form {
@@ -242,6 +259,12 @@ body {
         margin: 0 auto;
         overflow: hidden;
         text-align: center;
+        
+        &.error, &.submitted {
+          button {
+            background: linear-gradient(125deg, $purple, $pink);
+          }
+        }
         
         input {
           border: none;
@@ -291,10 +314,14 @@ body {
         @media all and (min-width: 800px) {
           width: calc(50% - 9px);
           display: inline-block;
-          vertical-align: bottom;
+          vertical-align: top;
+          
+          &:first-of-type {
+            vertical-align: bottom;
+          }
           
           &:nth-of-type(2n + 1) {
-            margin: 0 15px 50px 0;
+            margin: 0 20px 50px 0;
           }
           
           &:nth-of-type(2n + 2) {
@@ -303,7 +330,7 @@ body {
         }
         
         @media all and (min-width: 1200px) {
-          width: calc(33% - 9px);
+          width: calc(33% - 26px);
           display: inline-block;
           
           
@@ -317,7 +344,7 @@ body {
           }
           
           &:nth-of-type(3n + 2) {
-            margin: 0 15px 50px;
+            margin: 0 40px 50px;
           }
         }
         .image-container {

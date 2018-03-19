@@ -20,8 +20,8 @@ html
 				h2 The App
 				h5 Mattr allows you to build a more complete view of your social media audience through a comprehensive set of segmentation, comparison, monitoring, and visualization tools. Explore our Features to learn more.
 			div.section
-				div.image-container
-					div.image(data-ng-click="modal = true")
+				div.image-container(data-ng-click="modal = true")
+					div.image
 						img(src="images/audience.jpg")
 					h4 View Screenshot
 					div.plus
@@ -29,36 +29,36 @@ html
 				h3 Audience Personality Segments
 				p Decide how you want to look at your audience on our Unique Personality Type Analysis and demographics.
 			div.section
-				div.image-container
-					div.image(data-ng-click="modal = true")
-						img(src="images/audience.jpg")
+				div.image-container(data-ng-click="modal = true")
+					div.image
+						img(src="images/persona.jpg")
 					h4 View Screenshot
 					div.plus
 						<span>&#43;</span>
 				h3 Persona Builder
 				p Combine Personality Traits and Dempographic information to create Audience Personas that make sense for your business.
 			div.section
-				div.image-container
-					div.image(data-ng-click="modal = true")
-						img(src="images/audience.jpg")
+				div.image-container(data-ng-click="modal = true")
+					div.image
+						img(src="images/engagement.jpg")
 					h4 View Screenshot
 					div.plus
 						<span>&#43;</span>
 				h3 Engagement Response By Persona
 				p Which of your social media activities are attracting the audience engagement you're looking for? See a segmented repor on a per-post basis.
 			div.section
-				div.image-container
-					div.image(data-ng-click="modal = true")
-						img(src="images/audience.jpg")
+				div.image-container(data-ng-click="modal = true")
+					div.image
+						img(src="images/benchmarking.jpg")
 					h4 View Screenshot
 					div.plus
 						<span>&#43;</span>
 				h3 Social Brand Benchmarking
 				p See how your brand's audience compares to that of your competition, or your industry. Choose what you want to compare and then view the comparison.
 			div.section
-				div.image-container
-					div.image(data-ng-click="modal = true")
-						img(src="images/audience.jpg")
+				div.image-container(data-ng-click="modal = true")
+					div.image
+						img(src="images/sentiment.jpg")
 					h4 View Screenshot
 					div.plus
 						<span>&#43;</span>
@@ -68,7 +68,9 @@ html
 		div.container
 			div.image
 				div.image-inner
-					img(src="/images/audience.jpg")
+					img(src="/images/lightbox.jpg")
+					div.caption
+						p <span>Screenshot Title.</span> Caption text lorem ipsum dolor sit amet.
 					div.close(data-ng-click="modal = false")
 						p close <span>&#215;</span>
 
